@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/cameraChange"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/camera" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            app:autoFocusButtonColor="@android:color/white"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@android:color/white"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@android:color/white"
+            app:frameCornersRadius="0dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="0.90"
+            app:frameThickness="2dp"
+            app:maskColor="#00000000" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="80dp"
+        android:layout_height="90dp"/>
+</LinearLayout>
